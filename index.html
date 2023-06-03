@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>UNIT CONVERTER</h1>
+    
+    <div class="converter">
+        <input type="number" id="inputValue" placeholder="Enter value">
+        <select id="conversionType" onchange="populateUnits()">
+            <option value="">Select a conversion type</option>
+            <option value="length">Length</option>
+            <option value="area">Area</option>
+            <option value="volume">Volume</option>
+            <option value="mass">Mass</option>
+            <option value="temperature">Temperature</option>
+            <option value="time">Time</option>
+            <option value="speed">Speed</option>
+            <option value="currency">Currency</option>
+        </select>
+        <select id="fromUnit" onchange="convert()">
+            <option value="">From Unit</option>
+        </select>
+        <select id="toUnit" onchange="convert()">
+            <option value="">To Unit</option>
+        </select>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
